@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .gender {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<script src="script.js"></script>
+<body>
+
+<div class="container">
+
+    <h2>Registration Form</h2>
+
+    <form action="#" method="post">
+
+        <label>Full Name</label>
+        <input type="text" name="fullname" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter password" required>
+
+        <label>Confirm Password</label>
+        <input type="password" name="confirmPassword" placeholder="Confirm password" required>
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone" placeholder="Enter phone number" required>
+
+        <label>Date of Birth</label>
+        <input type="date" name="dob">
+
+        <label>Gender</label><br>
+
+        <input class="gender" type="radio" name="gender" value="Male"> Male
+
+        <input class="gender" type="radio" name="gender" value="Female"> Female
+
+        <input class="gender" type="radio" name="gender" value="Other"> Other
+
+        <br><br>
+
+        <label>Course</label>
+        <select name="course">
+            <option>Select Course</option>
+            <option>B.Tech CSE</option>
+            <option>B.Tech IT</option>
+            <option>BCA</option>
+            <option>MCA</option>
+        </select>
+
+        <label>Address</label>
+        <textarea rows="4" placeholder="Enter your address"></textarea>
+
+        <label>
+            <input type="checkbox" required>
+            I agree to the Terms and Conditions
+        </label>
+
+        <br><br>
+
+        <input type="submit" value="Register" class="btn">
+
+    </form>
+
+</div>
+
+</body>
+</html>

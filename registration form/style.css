@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+.container{
+    width: 420px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+.gender-group{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.gender-group label{
+    font-weight: normal;
+}
+
+.gender-group input{
+    width: auto;
+    margin-right: 5px;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox input{
+    width: auto;
+    margin-right: 10px;
+}
+
+.checkbox label{
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.btn{
+    width: 100%;
+    padding: 12px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #0056b3;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0,123,255,0.4);
+}

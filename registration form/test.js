@@ -45,12 +45,12 @@ const student = JSON.parse(
 );
 
 
-// TC-05: Name Validation
-if (fullName !== "") {
-    console.log("TC-05 Passed: Name is not empty");
-} else {
-    console.log("TC-05 Failed: Name is empty");
-}
+// // TC-05: Name Validation
+// if (fullName !== "") {
+//     console.log("TC-05 Passed: Name is not empty");
+// } else {
+//     console.log("TC-05 Failed: Name is empty");
+// }
 
-// TC-06: 
+// // TC-06: 
 

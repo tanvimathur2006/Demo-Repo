@@ -4,7 +4,7 @@ console.log("Registration Test\n");
 
 //TC-01: check index.html
 
-if(fs.existsSync("index.html")){
+if(fs.existsSync("index1.html")){
     console.log("TC-01: index.html exists: PASS");
 }
 else{

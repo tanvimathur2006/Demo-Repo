@@ -13,7 +13,7 @@ else{
 }
 
 //TC-02: check style.css
-if(fs.existsSync("registration form/css/style.css")){
+if(fs.existsSync("registration form/style.css")){
      console.log("TC-02: style.css exists: PASS");
 }
 else{

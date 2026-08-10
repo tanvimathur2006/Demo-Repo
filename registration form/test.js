@@ -4,7 +4,7 @@ console.log("Registration Test\n");
 
 //TC-01: check index.html
 
-if(fs.existsSync("index1.html")){
+if(fs.existsSync("index.html")){
     console.log("TC-01: index.html exists: PASS");
 }
 else{
@@ -12,7 +12,7 @@ else{
     passed=false;
 }
 
-//TC-01: check style.css
+//TC-02: check style.css
 if(fs.existsSync("css/style.css")){
      console.log("TC-02: style.css exists: PASS");
 }

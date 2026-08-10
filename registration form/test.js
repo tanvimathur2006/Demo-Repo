@@ -31,19 +31,17 @@ else{
 }
 
 //tc4 :
-if(fs.existsSync("registration form/student.json")){
-    console.log("TC-04 : student.json exists :PASS");
-}
-else{
-    console.log("TC-04 : student.json exists :FAIL");
-    passed=false;
-}
+if (fs.existsSync("registration form/student.json")) {
+    console.log("TC-04: student.json exists: PASS");
 
-//read json 
-const student = JSON.parse(
-    fs.readFileSync("registration form/student.json")
-);
+    const data = fs.readFileSync("registration form/student.json", "utf8");
 
+    // Your JSON tests here
+
+} else {
+    console.log("TC-04: student.json exists: FAIL");
+    passed = false;
+}
 
 // // TC-05: Name Validation
 // if (fullName !== "") {

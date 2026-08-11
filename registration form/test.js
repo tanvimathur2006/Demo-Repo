@@ -140,6 +140,46 @@ else {
     passed = false;
 }
 
+// TC-07: Mobile Validation
+
+if (script.includes("phonePattern") && script.includes("phonePattern.test(phone)")) {
+    console.log("TC-07: Mobile Validation PASS");
+} else {
+    console.log("TC-07: Mobile Validation FAIL");
+    passed = false;
+}
+
+
+// TC-08: Gender Validation
+
+if (script.includes("if (!gender)")) {
+    console.log("TC-08: Gender Validation PASS");
+} else {
+    console.log("TC-08: Gender Validation FAIL");
+    passed = false;
+}
+
+
+// TC-09: Password Validation
+
+if (script.includes("password.length < 6")) {
+    console.log("TC-09: Password Validation PASS");
+} else {
+    console.log("TC-09: Password Validation FAIL");
+    passed = false;
+}
+
+
+// TC-10: Registration SUCCESS
+
+if (passed) {
+    console.log("TC-10: Registration SUCCESS");
+    process.exit(0);
+} else {
+    console.log("TC-10: Registration FAILED");
+    process.exit(1);
+}
+
 // FINAL RESULT
 
 console.log("\n============================");

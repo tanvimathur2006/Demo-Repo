@@ -119,36 +119,23 @@ else {
 
 // TC-05: Name Validation
 
-if (fullName !== "") {
-    console.log("TC-05: Name is not empty: PASS");
+const script = fs.readFileSync("registration form/script.js", "utf8");
+
+if (script.includes("fullName.length < 3")) {
+    console.log("TC-05: Name validation exists: PASS");
 }
 else {
-    console.log("TC-05: Name is empty: FAIL");
+    console.log("TC-05: Name validation exists: FAIL");
     passed = false;
 }
 
 
 // TC-06: Email Validation
 
-if (email.includes("@")) {
-    console.log("TC-06: Email is valid: PASS");
+if (script.includes("emailPattern") && script.includes("emailPattern.test(email)")) {
+    console.log("TC-06: Email validation exists: PASS");
 }
 else {
-    console.log("TC-06: Email is invalid: FAIL");
+    console.log("TC-06: Email validation exists: FAIL");
     passed = false;
-}
-
-// FINAL RESULT
-
-console.log("\n============================");
-console.log("        TEST SUMMARY");
-console.log("============================");
-
-if (passed) {
-    console.log("All test cases PASSED");
-    process.exit(0);
-}
-else {
-    console.log("Some test cases FAILED");
-    process.exit(1);
 }

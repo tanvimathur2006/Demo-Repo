@@ -139,3 +139,18 @@ else {
     console.log("TC-06: Email validation exists: FAIL");
     passed = false;
 }
+
+// FINAL RESULT
+
+console.log("\n============================");
+console.log("        TEST SUMMARY");
+console.log("============================");
+
+if (passed) {
+    console.log("All test cases PASSED");
+    process.exit(0);
+}
+else {
+    console.log("Some test cases FAILED");
+    process.exit(1);
+}
